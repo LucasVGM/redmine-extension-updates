@@ -1,4 +1,4 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist]
-"1"="iebpkhmlapcdgpboknmejaalpjmgneda;https://REEMPLAZAR-CON-TU-DOMINIO-RAILWAY.up.railway.app/update.xml"
+"1"="iebpkhmlapcdgpboknmejaalpjmgneda;https://redmine-extension-updates-production.up.railway.app/update.xml"

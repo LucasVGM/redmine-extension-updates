@@ -10,18 +10,24 @@ pasar por la Chrome Web Store.
   pierde, hay que reinstalar la extensión a mano en todas las PCs con un ID
   nuevo — cuidarla.
 
-## Deploy inicial en Railway
+## Deploy
 
-1. `railway login` (o conectar este folder a un repo de GitHub y hacerlo
-   desde el dashboard de Railway — "New Project" → "Deploy from GitHub repo").
-2. `railway up` (si usás la CLI) o dejá que Railway detecte `package.json`
-   y lo despliegue automáticamente al pushear.
-3. Copiá el dominio que te asigna Railway (`https://algo.up.railway.app`).
-4. Editá `install-extension-policy.reg` y reemplazá
-   `REEMPLAZAR-CON-TU-DOMINIO-RAILWAY.up.railway.app` por ese dominio real.
-5. Ejecutá ese `.reg` (doble click, requiere permisos de administrador) en
-   cada PC de la empresa — una sola vez por máquina. A partir de ahí, Chrome
-   instala y actualiza la extensión solo, sin más pasos manuales.
+Ya deployado en Railway (proyecto `redmine-extension-updates`, vía CLI —
+`railway up` parado en esta carpeta). Dominio activo:
+
+```
+https://redmine-extension-updates-production.up.railway.app
+```
+
+Verificado: `/update.xml` y `/redmine-dark-mode.crx` responden 200.
+
+**Falta:** ejecutar `install-extension-policy.reg` (doble click, requiere
+permisos de administrador) en cada PC de la empresa — una sola vez por
+máquina. A partir de ahí, Chrome instala y actualiza la extensión solo,
+sin más pasos manuales.
+
+Si en algún momento se re-crea el proyecto en Railway o se regenera el
+dominio, hay que actualizar la URL en `install-extension-policy.reg`.
 
 ## Cómo publicar una actualización nueva
 
