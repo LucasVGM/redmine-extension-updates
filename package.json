@@ -1,0 +1,12 @@
+{
+  "name": "redmine-extension-updates",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Servidor de actualizaciones para extensiones de Chrome internas de VGM Sistemas",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
